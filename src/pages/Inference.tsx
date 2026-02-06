@@ -3,7 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Zap, Shield, DollarSign } from "lucide-react";
-import inferenceIllustration from "@/assets/illustration-inference.jpg";
+import LoopingViewportVideo from "@/components/LoopingViewportVideo";
 
 const problems = [
   {
@@ -87,12 +87,13 @@ const Inference = () => {
           </div>
 
           <div className="container mx-auto max-w-3xl mt-16 fade-in-delayed-2">
-            <img
-              src={inferenceIllustration}
-              alt="Distributed network of compute nodes connected by thin lines"
-              className="w-full rounded-xl"
-              loading="eager"
-            />
+            <div className="bg-card border border-border/60 shadow-soft rounded-2xl overflow-hidden">
+              <LoopingViewportVideo
+                src="/Motion_Design_for_Distributed_Computing.mp4"
+                ariaLabel="Motion design for distributed computing"
+                className="w-full h-auto"
+              />
+            </div>
           </div>
         </section>
 

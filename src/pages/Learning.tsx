@@ -3,7 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Upload, MessageSquare, BookOpen, Layers } from "lucide-react";
-import learningIllustration from "@/assets/illustration-learning.jpg";
+import LoopingViewportVideo from "@/components/LoopingViewportVideo";
 
 const features = [
   {
@@ -73,12 +73,13 @@ const Learning = () => {
           </div>
 
           <div className="container mx-auto max-w-3xl mt-16 fade-in-delayed-2">
-            <img
-              src={learningIllustration}
-              alt="Open notebook with connected knowledge pages"
-              className="w-full rounded-xl"
-              loading="eager"
-            />
+            <div className="bg-card border border-border/60 shadow-soft rounded-2xl overflow-hidden">
+              <LoopingViewportVideo
+                src="/learn.mp4"
+                ariaLabel="Learning motion video"
+                className="w-full h-auto"
+              />
+            </div>
           </div>
         </section>
 
