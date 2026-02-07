@@ -4,12 +4,13 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Upload, MessageSquare, BookOpen, Layers } from "lucide-react";
 import LoopingViewportVideo from "@/components/LoopingViewportVideo";
+import Seo from "@/components/Seo";
 
 const features = [
   {
     icon: Upload,
     title: "Upload anything",
-    description: "PDFs, notes, slides, research papers — drop them in.",
+    description: "PDFs, notes, slides, and research papers. Drop them in.",
   },
   {
     icon: MessageSquare,
@@ -38,15 +39,20 @@ const audiences = [
 ];
 
 const differentiators = [
-  "Not a chat assistant — it reads your documents, not the open web",
-  "Not generic web search — answers are grounded in your sources",
-  "Context persists — your understanding compounds over time",
-  "Runs on local‑first inference — your data stays yours",
+  "Not a chat assistant. It reads your documents, not the open web.",
+  "Not generic web search. Answers are grounded in your sources.",
+  "Context persists. Your understanding compounds over time.",
+  "Runs on local‑first inference. Your data stays yours.",
 ];
 
 const Learning = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title="Knolink — Learning"
+        description="Knolink is a calm learning workspace to collect, connect, and return to what you’re learning over time, without losing context."
+        canonicalPath="/learning"
+      />
       <Navigation />
 
       <main>
@@ -61,12 +67,12 @@ const Learning = () => {
               material.
             </p>
             <div className="fade-in-delayed-2">
-              <Link to="/contact">
+              <Link to="/learning/start">
                 <Button
                   size="lg"
                   className="rounded-full px-8 text-sm font-medium"
                 >
-                  Start Free
+                  Start
                 </Button>
               </Link>
             </div>

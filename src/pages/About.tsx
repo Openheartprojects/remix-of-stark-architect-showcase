@@ -1,9 +1,15 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Seo from "@/components/Seo";
 
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title="About — Altair Axis"
+        description="Altair Axis is a research and product lab focused on infrastructure and tools that support how people think, learn, and build."
+        canonicalPath="/about"
+      />
       <Navigation />
       <main className="pt-32 pb-20 md:pt-40 md:pb-28 px-6">
         <div className="container mx-auto">
@@ -27,7 +33,7 @@ const About = () => {
                 think, learn, and build.
               </p>
               <p>
-                Our work spans systems, products, and the spaces between them —
+                Our work spans systems, products, and the spaces between them,
                 where design decisions shape behavior over time.
               </p>
             </section>
@@ -40,9 +46,9 @@ const About = () => {
               </h2>
               <p>We begin with questions, not solutions.</p>
               <p>
-                Much of what we explore never becomes a product. Some ideas
-                take years to mature. We believe this slowness is necessary —
-                not as a constraint, but as a condition for care.
+                Much of what we explore never becomes a product. Some ideas take
+                years to mature. We believe this slowness is necessary, not as a
+                constraint, but as a condition for care.
               </p>
             </section>
 
@@ -58,9 +64,9 @@ const About = () => {
                 the person using it.
               </p>
               <p>
-                We are interested in clarity over novelty, restraint over
-                excess, and systems that explain themselves through use rather
-                than instruction.
+                We are interested in clarity over novelty, restraint over excess,
+                and systems that explain themselves through use rather than
+                instruction.
               </p>
             </section>
 
@@ -73,7 +79,7 @@ const About = () => {
               <p>The most important systems are rarely visible.</p>
               <p>
                 We design infrastructure that is predictable, composed, and
-                dependable — not because it is impressive, but because it allows
+                dependable, not because it is impressive, but because it allows
                 other things to exist without friction.
               </p>
               <p>When infrastructure works well, it disappears.</p>
@@ -88,7 +94,7 @@ const About = () => {
               <p>Some of our work becomes products. Some remains exploratory.</p>
               <p>
                 Knolink and Apolemia emerged from research into continuity,
-                locality, and calm systems — ideas we continue to refine through
+                locality, and calm systems, ideas we continue to refine through
                 use, iteration, and study.
               </p>
               <p>Products are not endpoints. They are conversations.</p>
@@ -127,8 +133,8 @@ const About = () => {
               <h2 className="text-base font-medium text-foreground">Closing</h2>
               <p>We are not interested in building everything.</p>
               <p>
-                We are interested in building a few things well — and
-                understanding why they matter.
+                We are interested in building a few things well, and understanding
+                why they matter.
               </p>
               <p className="text-xs text-muted-foreground pt-6 border-t border-border/40">
                 Altair Axis is based on the belief that good tools begin with

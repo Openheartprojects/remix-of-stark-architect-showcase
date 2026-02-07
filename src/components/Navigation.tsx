@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const navLinks = [
   { href: "/learning", label: "Learning" },
@@ -37,13 +38,14 @@ const Navigation = () => {
           ))}
         </div>
 
-        <div className="hidden lg:block">
+        <div className="hidden lg:flex items-center gap-2">
+          <ThemeToggle />
           <Link to="/contact">
             <Button
               size="sm"
               className="rounded-full px-6 text-sm font-medium"
             >
-              Get Started
+              Contact us
             </Button>
           </Link>
         </div>
@@ -71,12 +73,15 @@ const Navigation = () => {
               </Link>
             ))}
             <div className="pt-4 border-t border-border/60">
+              <div className="mb-3 flex justify-end">
+                <ThemeToggle />
+              </div>
               <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
                 <Button
                   size="sm"
                   className="rounded-full px-6 w-full text-sm font-medium"
                 >
-                  Get Started
+                  Contact us
                 </Button>
               </Link>
             </div>

@@ -1,10 +1,16 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import NotebookConnectionsIllustration from "@/components/NotebookConnectionsIllustration";
+import Seo from "@/components/Seo";
 
 const HowItWorks = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title="How It Works — Knolink"
+        description="How Knolink keeps ideas, notes, and references connected in one continuous space, without breaking your flow."
+        canonicalPath="/how-it-works"
+      />
       <Navigation />
 
       <main className="pt-32 pb-20 md:pt-40 md:pb-28 px-6">

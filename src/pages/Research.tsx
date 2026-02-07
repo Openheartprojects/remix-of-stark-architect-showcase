@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Seo from "@/components/Seo";
 
 type FeaturedEssay = {
   title: string;
@@ -90,6 +91,11 @@ const writing: RecentWriting[] = [
 const Research = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title="Research — Altair Axis"
+        description="Writing and research on continuity, locality, calm systems, and infrastructure for thinking tools."
+        canonicalPath="/research"
+      />
       <Navigation />
 
       <main className="pt-32 pb-20 md:pt-40 md:pb-28 px-6">

@@ -1,75 +1,103 @@
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import Seo from "@/components/Seo";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background">
+      <Seo
+        title="Contact — Altair Axis"
+        description="Get in touch with Altair Axis. We’re open to thoughtful conversations about research, infrastructure, learning systems, or collaboration."
+        canonicalPath="/contact"
+      />
       <Navigation />
-      <section className="pt-32 pb-32 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-20">
-              <div>
-                <h1 className="text-minimal text-muted-foreground mb-4">GET IN TOUCH</h1>
-                <h2 className="text-4xl md:text-6xl font-light text-architectural mb-12">
-                  Let's Create Something
-                  <br />
-                  Extraordinary
-                </h2>
-                
-                <div className="space-y-8">
-                  <div>
-                    <h3 className="text-minimal text-muted-foreground mb-2">EMAIL</h3>
-                    <a href="mailto:hello@archstudio.com" className="text-xl hover:text-muted-foreground transition-colors duration-300">
-                      hello@archstudio.com
-                    </a>
-                  </div>
-                  
-                  <div>
-                    <h3 className="text-minimal text-muted-foreground mb-2">PHONE</h3>
-                    <a href="tel:+1234567890" className="text-xl hover:text-muted-foreground transition-colors duration-300">
-                      +1 (234) 567-8900
-                    </a>
-                  </div>
-                  
-                  <div>
-                    <h3 className="text-minimal text-muted-foreground mb-2">STUDIO</h3>
-                    <address className="text-xl not-italic">
-                      123 Design Avenue
-                      <br />
-                      New York, NY 10001
-                    </address>
-                  </div>
+      <main className="pt-32 pb-20 md:pt-40 md:pb-28 px-6">
+        <div className="container mx-auto">
+          <div className="mx-auto max-w-[720px]">
+            <header className="mb-12 md:mb-14">
+              <h1 className="text-3xl md:text-4xl font-medium tracking-tight text-foreground leading-[1.15] fade-in">
+                Get in touch
+              </h1>
+              <div className="mt-6 space-y-4 text-sm md:text-base text-muted-foreground leading-relaxed fade-in-delayed">
+                <p>
+                  We’re open to thoughtful conversations about research,
+                  infrastructure, learning systems, or collaboration.
+                </p>
+                <p>
+                  If you’re reaching out with care, you’re in the right place.
+                </p>
+              </div>
+            </header>
+
+            <section className="border-t border-border/40 pt-10 space-y-10">
+              <div className="fade-in-delayed">
+                <p className="text-xs font-medium tracking-wide text-muted-foreground uppercase">
+                  Email
+                </p>
+                <a
+                  href="mailto:hello@altairaxis.co.za"
+                  className="mt-3 block text-base md:text-lg text-foreground hover:text-muted-foreground transition-colors"
+                >
+                  hello@altairaxis.co.za
+                </a>
+                <p className="mt-2 text-xs text-muted-foreground">
+                  We read everything. Replies may take time.
+                </p>
+              </div>
+
+              <div className="fade-in-delayed">
+                <p className="text-xs font-medium tracking-wide text-muted-foreground uppercase">
+                  Elsewhere
+                </p>
+                <p className="mt-3 text-sm md:text-base text-muted-foreground leading-relaxed">
+                  We share updates and writing occasionally.
+                </p>
+
+                <div className="mt-6 space-y-3 text-sm md:text-base">
+                  <a
+                    href="https://www.instagram.com/altairaxis"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    Instagram: Altair Axis
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/altair-axis"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    LinkedIn: Altair Axis
+                  </a>
+                  <a
+                    href="https://x.com/altairaxis"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    X: Altair Axis
+                  </a>
+                  <a
+                    href="https://x.com/apolemialabs"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    X: Apolemia Labs
+                  </a>
                 </div>
               </div>
-              
-              <div className="space-y-8">
-                <div>
-                  <h3 className="text-minimal text-muted-foreground mb-6">FOLLOW US</h3>
-                  <div className="space-y-4">
-                    <a href="#" className="block text-xl hover:text-muted-foreground transition-colors duration-300">
-                      Instagram
-                    </a>
-                    <a href="#" className="block text-xl hover:text-muted-foreground transition-colors duration-300">
-                      LinkedIn
-                    </a>
-                    <a href="#" className="block text-xl hover:text-muted-foreground transition-colors duration-300">
-                      Behance
-                    </a>
-                  </div>
-                </div>
-                
-                <div className="pt-12 border-t border-border">
-                  <p className="text-muted-foreground">
-                    We approach each project with curiosity, rigor, and a commitment to excellence. 
-                    Our process begins with listening, understanding your vision, and translating 
-                    it into spaces that exceed expectations.
-                  </p>
-                </div>
-              </div>
-            </div>
+
+              <p className="text-xs text-muted-foreground leading-relaxed pt-8 border-t border-border/40 fade-in-delayed">
+                Altair Axis values clarity, patience, and thoughtful work.
+              </p>
+            </section>
           </div>
         </div>
-      </section>
+      </main>
+
+      <Footer />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Seo from "@/components/Seo";
 
 const DiagramGridFlow = () => {
   return (
@@ -130,6 +131,11 @@ const DiagramNodeLifecycle = () => {
 const Developers = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title="Developers — Altair Axis"
+        description="Technical overview and integration notes for Apolemia and locality-aware inference execution."
+        canonicalPath="/developers"
+      />
       <Navigation />
 
       <main className="pt-32 pb-20 md:pt-40 md:pb-28 px-6">

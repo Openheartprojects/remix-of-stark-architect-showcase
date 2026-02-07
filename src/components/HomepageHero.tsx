@@ -6,7 +6,7 @@ const HomepageHero = () => {
   return (
     <section className="pt-28 pb-20 md:pt-36 md:pb-28 px-6">
       <div className="container mx-auto max-w-6xl">
-        <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           <div className="lg:col-span-5">
             <div className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-card px-3 py-1.5 text-xs text-muted-foreground fade-in">
               <span className="h-1.5 w-1.5 rounded-full bg-primary/60" />

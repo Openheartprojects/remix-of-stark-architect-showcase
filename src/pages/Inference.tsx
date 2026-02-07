@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Zap, Shield, DollarSign } from "lucide-react";
 import LoopingViewportVideo from "@/components/LoopingViewportVideo";
+import Seo from "@/components/Seo";
 
 const problems = [
   {
@@ -59,6 +60,11 @@ const notList = [
 const Inference = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title="Apolemia — Inference"
+        description="Apolemia is a distributed inference platform for executing workloads across a global network of nodes, with locality-aware scheduling and explicit isolation boundaries."
+        canonicalPath="/inference"
+      />
       <Navigation />
 
       <main>
@@ -75,12 +81,12 @@ const Inference = () => {
               for latency, cost, and privacy.
             </p>
             <div className="fade-in-delayed-2">
-              <Link to="/contact">
+              <Link to="/inference/access">
                 <Button
                   size="lg"
                   className="rounded-full px-8 text-sm font-medium"
                 >
-                  Join the Network
+                  Access
                 </Button>
               </Link>
             </div>

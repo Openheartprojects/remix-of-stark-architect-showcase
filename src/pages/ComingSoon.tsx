@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import Seo from "@/components/Seo";
+import { useLocation } from "react-router-dom";
 
 interface ComingSoonProps {
   title: string;
@@ -9,8 +11,15 @@ interface ComingSoonProps {
 }
 
 const ComingSoon = ({ title, description }: ComingSoonProps) => {
+  const location = useLocation();
+
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title={`${title} — Altair Axis`}
+        description={description}
+        canonicalPath={location.pathname}
+      />
       <Navigation />
 
       <main className="pt-32 pb-20 md:pt-40 md:pb-28 px-6">
